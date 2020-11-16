@@ -1,9 +1,9 @@
-# resolve to to laptop "ed"
+# Use Pi-hole on laptop "ed"
 nameserver 192.168.86.230
 
-# Resolve to raspberry pi "rhubarb"
+# Use Pi-hole on Raspberry-Pi "rhubarb"
 nameserver 192.168.86.231
 
-# It's not google
+# Last resort.  It's not google
 nameserver 9.9.9.9
 
