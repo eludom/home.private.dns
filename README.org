@@ -42,6 +42,19 @@ Here is the help from the resolv function that is defined:
   stow -v home.private.dns
   #+end_example
 
+  See
+  http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
+  for the inspiration.  I am migrating most of my package/program
+  specific configs to a simlar format.  Some of my current packages are:
+
+  #+begin_example
+  home.public.bin
+  home.public.dotfiles
+  home.public.emacs-public
+  home.private.dns
+  #+end_example
+
+  
 * To Use
   
 #+begin_example
