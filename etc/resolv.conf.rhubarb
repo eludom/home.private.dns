@@ -1,0 +1,9 @@
+# Resolve to raspberry pi "rhubarb"
+nameserver 192.168.86.231
+
+# resolve to to laptop "ed"
+nameserver 192.168.86.230
+
+# It's not google
+nameserver 9.9.9.9
+
