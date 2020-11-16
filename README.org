@@ -1,6 +1,7 @@
 This repo contains files and aliases for dealing with DNS on my home
 network.  Here is the help from the resolv function that is defined:
 
+  #+begin_example
   Usage: resolv [show|list|help|NAME]
   
   Examples:
@@ -18,5 +19,6 @@ network.  Here is the help from the resolv function that is defined:
       /etc/resolv.conf.homenet
   
     which will be copied to /etc/resolv.conf
+  #+end_example
 
 This was written to work with Pi-Hole DNS on Linux.
