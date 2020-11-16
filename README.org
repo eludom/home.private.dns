@@ -1,5 +1,9 @@
+* What is this?
 This repo contains files and aliases for dealing with DNS on my home
-network.  Here is the help from the resolv function that is defined:
+network.
+
+* Example and usage
+Here is the help from the resolv function that is defined:
 
   #+begin_example
   Usage: resolv [show|list|help|NAME]
@@ -21,4 +25,47 @@ network.  Here is the help from the resolv function that is defined:
     which will be copied to /etc/resolv.conf
   #+end_example
 
-This was written to work with Pi-Hole DNS on Linux.
+* Why is this?  
+  This was written to work with Pi-Hole DNS on Linux.
+
+* To Install
+  The files in this repo are arranged to work as a [[https://www.gnu.org/software/stow/][GNU stow]]
+  package. Stow symlinks "packages" into $HOME (or wherever).
+
+  To install this package, do something like:
+
+  #+begin_example
+  cd ~
+  mkdir stow
+  cd stow
+  git clone https://github.com/eludom/home.private.dns.git
+  stow -v home.private.dns
+  #+end_example
+
+* To Use
+  
+#+begin_example
+  # put in .bashrc
+  source ~/rc.local/dns-alises.sh  
+
+  # get help
+  resolv
+
+  # show current resolv.conf
+  resolv show
+
+  # list resolv.conf options
+  resolv list
+
+  # select quad9 DNS
+  resolv quad9
+
+  # show the result
+  resolv show
+
+  # test.  Look at ";; SERVER: ..."
+  dig ftp.uu.net 
+#+end_example
+
+  
+  
